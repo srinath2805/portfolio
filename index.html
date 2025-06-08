@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SRINATH BULUSU</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <script src="src/script.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+  <body>
+    <div id="welcome-overlay">
+      <div class="split split-1">SRINATH</div>
+      <div class="split split-2">BULUSU's</div>
+      <div class="split split-3">Portfolio</div>
+    </div>
+    
+  
+
+    <header>
+      <div class="desktop-header">
+        <!-- Keep your original header content here -->
+        <a href="mailto:srinathbulusu28@gmail.com" style="color:white; text-decoration: none;">
+          <img src="https://img.icons8.com/fluency-systems-filled/24/ffffff/new-post.png">srinathbulusu28@gmail.com
+        </a>
+        <span><img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png">+1-8178198120</span>
+        <a href="https://www.google.com/maps/place/Dallas,+TX" style="color:white; text-decoration: none;">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png">Dallas,TX
+        </a>
+        <a href="https://linkedin.com/in/srinath-bulusu-665b341a4/" target="_blank" style="color:white;">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png">LinkedIn
+        </a>
+        <a href="https://github.com" target="_blank" style="color:white;">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png">GitHub
+        </a>
+        <a href="Srinath.pdf" download style="color:white;">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/export-pdf.png">Download Resume
+        </a>
+      </div>
+    
+      <div class="mobile-header">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="header-links">
+          <a href="mailto:srinathbulusu28@gmail.com">Email</a>
+          <a href="tel:+18178198120">Phone</a>
+          <a href="https://linkedin.com/in/srinath-bulusu-665b341a4/" target="_blank">LinkedIn</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://www.facebook.com/bulusu.srinath/" target="_blank">Facebook</a>
+          <a href="https://www.instagram.com/srinath_28/" target="_blank">Instagram</a>
+          <a href="Srinath.pdf" download style="color:white;" target="_blank">Resume</a>
+        </div>
+      </div>
+    </header> 
+
+  <div id="summary" class="section active">
+    <div class="summary-content">
+      <div class="profile-name">
+        <img src="photo.jpg" alt="Profile Photo" class="profile-pic" />
+        <div class="name-container" id="nameContainer">SRINATH BULUSU</div>
+      </div>
+      <p class="summary-text">
+        Senior Software Developer with 3 years of experience at Capgemini Technology Services, specializing in Snowflake, data warehousing , data engineering, DevOps automation and backend development with AWS-driven continuous integration.Successfully implemented CI/CD pipelines for automated data ingestion, using stored procedures in Snowpark ,DevOps practices and included version control (GitHub, Flyway), error detection ,auto-recovery mechanisms, automated data flow from AWS S3 as a source for raw data and integrating it into Snowflake.Extensive expertise in SQL relational databases (Oracle SQL, Snowflake), executing data modeling, data profiling, and statistical modeling to transform complex datasets into valuable business insights.Experience in role-based access control (RBAC), data security, database and schema creation across multiple projects, ensuring alignment with governance policies of the organization. Implemented data masking, row-level security and access control measures.Proficient in Agile and Scrum methodologies using JIRA.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="slider-container" id="sliderContainer">
+    <div class="slider-nav">
+      <div class="slider-labels">
+        <span onclick="navigateSection(0)">Summary</span>
+        <span onclick="navigateSection(1)">Skills</span>
+        <span onclick="navigateSection(2)">Experience</span>
+        <span onclick="navigateSection(3)">Projects</span>
+        <span onclick="navigateSection(4)">Education</span>
+        <span onclick="navigateSection(5)">Certificates & Awards</span>
+      </div>
+      <input type="range" min="0" max="5" value="0" id="navSlider">
+    </div>
+  </div>
+  
+
+  <div class="main-content">
+<!--------------------------------------------------------------------------------Skills--------------------------------------------------------------------------- -->
+    <div id="skills" class="section">
+        <h2 style="color:#254187;margin-left:30px;">Skills</h2>
+        <ul style="color:#254187; line-height: 1.6; font-weight: 500; max-width: 1000px; margin: 20px 30px;">
+          <li ><strong>Programming Languages:</strong> SQL,Python,Javascript,C </li>
+          <li><strong>Data Engineering Tools:</strong> Snowflake, Snowpark, AWS Glue, AWS Lambda, AWS S3, Alteryx</li>
+          <li><strong>Database Tools:</strong> Oracle SQL, Microsoft SQL,SQL Server management Studio, SQL Workbench, NoSQL, MongoDB, Toad Data Point, Collibra, Palantir</li>
+          <li><strong>Front End Tools:</strong> HTML,CSS,React JS,Typescript,Node JS</li>
+          <li><strong>Visualization Tools:</strong> Tableau, Informatica, Power BI, R</li>
+          <li><strong>ML Techniques:</strong> Linear Regression, Logistic Regression, Decision Trees, Random Forest, Support Vector Machine (SVM), K-Nearest Neighbors (KNN), Naive Bayes, Gradient Boosting (XGBoost, AdaBoost), Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), Autoencoders, Deep Reinforcement Learning</li>
+          <li><strong>Other Tools:</strong> Git, GitHub, Flyway, Jira, Jenkins Pipeline, AutoCAD, Microsoft Office (PowerPoint, Excel, Word)</li>
+          <li><strong>Other Skills:</strong> Presentation skills, written and verbal communication skills, ability to work independently</li>
+        </ul>
+      
+        <div class="skill-icons">
+          <img src="https://img.icons8.com/color/48/sql.png" alt="SQL" title="SQL" />
+          <img src="https://signup.snowflake.com/static/images/logo-sno-blue.svg" alt="Snowflake" title="Snowflake" />
+          <img src="https://img.icons8.com/color/48/python--v1.png" alt="Python" title="Python" />
+          <img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS" title="AWS" />
+          <img src="https://img.icons8.com/color/48/amazon-s3.png" alt="S3" title="Amazon S3" />
+          <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*uoRkNnhqu3d61Zgx.png" alt="Lambda" title="AWS Lambda" />
+          <img src="https://img.icons8.com/color/48/tableau-software.png" alt="Tableau" title="Tableau" />
+          <img src="https://img.icons8.com/ios-filled/48/github.png" alt="GitHub" title="GitHub" />
+          <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="HTML" title="HTML" />
+          <img src="https://img.icons8.com/color/48/css3.png" alt="CSS" title="CSS" />
+          <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JavaScript" title="JavaScript" />
+          <img src="https://img.icons8.com/office/48/react.png" alt="React JS" title="React JS" />
+          <img src="https://img.icons8.com/color/48/typescript.png" alt="TypeScript" title="TypeScript" />
+        </div>
+        
+    </div>
+<!-- ----------------------------------------------------------------------------------------EXPERIENCE------------------------------------------------------------->
+
+
+<div id="experience" class="section">
+  <h2 style="color:#254187; margin-left:30px;">Experience</h2>
+  
+  <div class="experience-container" style="margin: 20px 50px;">
+    <div class="company-logo">
+      <img src="https://boomi.com/wp-content/uploads/Capgemini_logo.svg" alt="Capgemini Logo" title="Capgemini" />
+    </div>
+    
+    <p style="color: #254187; font-weight: 500;">
+      <strong>Company:</strong> Capgemini Technology Services, India<br>
+      <strong>Period:</strong> May 2021 to Jan 2024<br>
+      <strong>Client:</strong> Prudential Financial
+    </p>
+    <ul style="color: #254187; line-height: 1.6; font-weight: 500;">
+      <li>Successfully built an automated pipeline for enterprise data onboarding with minimal human intervention, ensuring data security and quality in Snowflake.</li>
+      <li>Developed Python-based stored procedures in Snowpark to automate data ingestion and transformation across six layers (handling up to 15TB datasets).</li>
+      <li>Built AWS S3-Snowflake pipelines for multi-format file ingestion (CSV, Parquet, JSON, XML).</li>
+      <li>Implemented error detection and auto-recovery in data pipelines, ensuring uninterrupted data processing.</li>
+      <li>Designed and enforced RBAC policies, role management, and access controls in Snowflake for compliance.</li>
+      <li>Applied data classification and masking based on business needs for enhanced security.</li>
+      <li>Deployed Change Data Capture (CDC) for real-time analytics and data integrity.</li>
+      <li>Maintained standardized deployments across environments using Flyway pipelines.</li>
+      <li>Enhanced customer experience via Snowflake Share feature and optimized data integration solutions.</li>
+    </ul>
+    
+    <p style="color: #254187; font-weight: 500;">
+      <strong>Client:</strong> Medica HealthCare
+    </p>
+    <ul style="color: #254187; line-height: 1.6; font-weight: 500;">
+      <li>Developed SQL and Snowflake scripts for structured views to improve data accessibility and workforce usability.</li>
+      <li>Created Incremental Type1 and Type2 data ingestion pipelines using Snowflake Streams, Merges, and Tasks, optimizing data synchronization.</li>
+      <li>Designed ETL workflows to improve data quality and troubleshoot performance issues.</li>
+      <li>Implemented data cloning, sandboxing, and security policies for data governance compliance.</li>
+      <li>Automated job workflows via Atomic scheduling for streamlined operations.</li>
+      <li>Contributed to Scrum meetings and strategic initiatives for seamless project delivery.</li>
+    </ul>
+  </div>
+</div>
+<!-- -----------------------------------------------------------PROJECTS--------------------------------------------------------------------- -->
+<div id="projects" class="section">
+  <h2 style="color:#254187; margin-left:30px;">Projects</h2>
+
+  <div class="projects-container">
+
+    <p><strong>1. Personalized Fitness Tracker with AI-Based Insights</strong></p>
+    <p>Objective: To design and develop a full-stack fitness tracker web application that allows users to log workouts, track progress, and receive AI-driven personalized recommendations.</p>
+    <ul>
+      <li>Designed and developed a full-stack web application for personalized fitness tracking, enabling users to log workouts, monitor progress, and receive AI-powered recommendations for optimized health outcomes.</li>
+      <li>Designed backend APIs using Node.js and Express.js to handle user authentication, workout data management, and goal tracking, incorporating robust middleware for logging and error handling.</li>
+      <li>Designed and optimized the database schema using ER diagrams, AI-assisted schema generation, and structured data pipelines for ingesting workout and progress data.</li>
+      <li>Built a responsive front-end using Vite.js and React, developing modular components for login, workout logging, dashboards, and analytics visualization</li>
+      <li>Applied AI api keys to streamline React component development, debug code, and enhance feature delivery.</li>
+    </ul>
+    
+    <p><strong>2. Home Credit Default Risk</strong></p>
+    <p>Objective: Developed predictive models to assess loan repayment likelihood using data science techniques and machine learning algorithms.</p>
+    <ul>
+      <li>Conducted data collection and preprocessing, ensuring data quality by handling missing values and anomalies.</li>
+      <li>Applied Logistic Regression, SVM, KNN, Random Forest, and Convolutional Neural Networks (CNN) for statistical modeling and risk assessment.</li>
+      <li>Utilized quantitative analysis to evaluate repayment likelihood, factoring in customer expenses, salary trends, and repayment history.</li>
+      <li>Implemented deep learning techniques, restructuring features into 2D matrices to enhance prediction accuracy.</li>
+      <li>Measured model performance using accuracy, precision, recall, F1-score, and AUC-ROC metrics.</li>
+    </ul>
+
+    <p><strong>3. Accident Data Visualization and Prediction with Machine Learning</strong></p>
+    <p>Objective: Utilized data science and statistical modeling to enhance customer experience in road safety analytics.</p>
+    <ul>
+      <li>Conducted data collection, data cleaning, and exploratory data analysis, preparing structured datasets for analysis.</li>
+      <li>Implemented time-series forecasting and machine learning models (Logistic Regression, Random Forest, Gradient Boosting, and LSTM) to predict accident probability based on environmental and demographic factors.</li>
+      <li>Developed interactive Tableau dashboards, providing visual insights into high-risk accident zones, improving workforce system preparedness.</li>
+      <li>Enabled data-driven decision-making for safety officials, contributing to strategic initiatives aimed at reducing traffic fatalities.</li>
+    </ul>
+
+  </div>
+</div>
+<!-- -----------------------------------------------------------------------EDUCATION-------------------------------------------------------------->
+<div id="education" class="section">
+  <h2 style="color:#254187; margin-left:30px;">Education</h2>
+
+  <div class="education-container" style="margin: 20px ; color: #254187; font-weight: 500; line-height: 1.6; max-height: 500px; overflow-y: auto; padding-right: 12px;">
+    
+    <div class="education-logos">
+      <img src="https://imia-medinfo.org/wp/wp-content/uploads/2024/06/UTA_initials_wm_2color-RGB_ct.png" alt="UTA Logo" title="University of Texas at Arlington" />
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Jntuk-logo.png" alt="JNTU Logo" title="JNTU" />
+    </div>
+
+    <ul>
+      <li><strong>Masters Degree in Data Science</strong> at University of Texas at Arlington. <strong>GPA: 4.0 / 4.0</strong></li>
+      <li><strong>Bachelors Degree in Mechanical Engineering</strong> at Jawaharlal Nehru Technological University, India. <strong>CGPA: 8.03 / 10</strong></li>
+      <li><strong>12<sup>th</sup> Standard</strong> Narayana Junior College. <strong>Percentage: 93.9%</strong></li>
+      <li><strong>10<sup>th</sup> Standard</strong> Bhashyam High School. <strong>CGPA: 8.80/10</strong></li>
+    </ul>
+
+  </div>
+</div>
+<!-- ---------------------------------------------------CErtification & Awards--------------------------------------------------------------------------------- -->
+<div id="certificates" class="section">
+  <h2 style="color:#254187; margin-left:30px;">Certificates & Awards</h2>
+
+  <div class="certificates-container" style="margin: 20px 50px; display: flex; flex-direction: column; gap: 20px;">
+    
+    <div class="certificates-text" style="color: #254187; font-weight: 500; line-height: 1.6;">
+      <h3>Certifications:</h3>
+      <ul>
+        <li>Python Essentials by Coursera (2021)</li>
+        <li>Snowflake Cloud Data Practitioner by Coursera (2021)</li>
+        <li>Associate Cloud Engineer from Google Cloud Platform (2021)</li>
+      </ul>
+
+      <h3>Awards & Recognition:</h3>
+      <ul>
+        <li>Rising Star in Q2 FY-23 for scaling up quickly to deliver high performance in the project.</li>
+        <li>Promotion as Senior Software Engineer at Capgemini within 1 year for delivering efficient solutions.</li>
+      </ul>
+    </div>
+
+    <div class="certificates-logos" style="display: flex; justify-content: flex-start; gap: 25px; margin-left: -10px;">
+      <img src="https://img.icons8.com/color/96/python.png" alt="Python Certificate" title="Python Essentials">
+      <img src="https://img.icons8.com/color/96/snowflake.png" alt="Snowflake Certificate" title="Snowflake Practitioner">
+      <img src="https://img.icons8.com/color/96/google-cloud.png" alt="GCP Certificate" title="Google Cloud Engineer">
+
+    </div>
+
+  </div>
+</div>
+<!-- --------------------------------------------------------------------Footer----------------------------------------------------------------- -->
+  <footer class="footer">
+    <div>&copy; 2025 SRINATH BULUSU. All rights reserved.</div>
+    <div class="socials">
+      <a href="https://www.facebook.com/bulusu.srinath/" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook" title="Facebook"/>
+      </a>
+      <a href="https://www.instagram.com/srinath_28/" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" title="Instagram" style="margin-left: -6px;" />
+      </a>
+
+    </div>
+  </footer>
+
+  
+</body>
+</html>

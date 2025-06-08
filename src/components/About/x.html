@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SRINATH BULUSU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+/*---------------------------------------------------BODY-------------------------------------------------------------------*/
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif; 
+      background-color: white;
+      overflow: hidden;
+    }
+/*---------------------------------------------------HEADER-------------------------------------------------------------------*/
+    header {
+    width: 97.6%;
+    padding: 6px 15px;
+    background-color: #254187;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    font-weight: 300; 
+    top: 0;
+    z-index: 1000;
+    border-bottom-left-radius: 15px; /* 👈 curved left */
+    border-bottom-right-radius: 15px; /* 👈 curved right */
+    }
+
+    header div {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    header img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+/*---------------------------------------------------SUMMARY  SECTION-------------------------------------------------------------------*/
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-left: 525px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 3px solid #151517;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  
+} 
+.name-container{
+    font-size: 36px;
+    font-weight: 500; 
+    color: #254187;
+    font-size: 36px;
+    font-weight: 500; 
+    color: #254187;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.summary-text {
+  font-size: 14px;
+  max-width: 1000px;
+  margin-left: 30px;
+  color: #254187;
+  font-weight: 500;
+  justify-content: space-around;
+}
+
+/*---------------------------------------------------SLIDER  SECTION-------------------------------------------------------------------*/
+    .slider-nav {
+      position: fixed;
+      right: 30px;
+      top: 150px;
+      height: 260px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      padding: 10px 0;
+    }
+    
+    .slider-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 260px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #254187;
+    }
+    .slider-labels span {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    writing-mode: horizontal-tb;
+    text-align: right;
+    }
+
+    .slider-labels span:hover {
+    transform: scale(1.1);
+    color: #0d8ddb;
+    }
+
+    .slider-nav input[type=range] {
+      writing-mode: vertical-rl;
+      -webkit-appearance: slider-vertical;
+      width: 1px;
+      height: 90%;
+      cursor: grab;
+      position: relative;
+      background: transparent;
+    }
+/*---------------------------------------------------MAIN CONTENT------------------------------------------------------------------*/
+    .main-content {
+      margin-left: 0px;
+      margin-right: 60px;
+      margin-top: 40px;
+      padding: 20px;
+      position: relative;
+      height: calc(100vh - 140px);
+      overflow: hidden;
+    }
+
+    .section {
+      opacity: 0;
+      transform: translateY(0px);
+      transition: all 0.4s ease-in-out;
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      top: 60px;
+      left: 0;
+      pointer-events: none;
+    }
+
+    .section.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      z-index: 1;
+    }
+/*--------------------------------------------------FOOTER  SECTION-------------------------------------------------------------------*/
+    footer {
+      background-color: #254187;
+      color: white;
+      text-align: center;
+      padding: 10px 10px;
+      position: fixed;
+      font-weight: 600;
+      bottom: 0;
+      width: 98.5%;
+      height: 4px;
+      vertical-align: middle;
+      border-top-left-radius: 10px; 
+      border-top-right-radius: 10px;
+    }
+    footer > div:first-child {
+    position: relative;
+    top: -8px;
+    font-size: 10px;
+}
+
+
+    footer .socials {
+    display: flex;
+    justify-content: right;
+    align-items: center; 
+    gap: 5px;
+    margin-top: 2.5px;
+    }
+
+    footer .socials a {
+    color: white;
+    text-decoration: none;
+    }
+
+    footer img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -50px; /* 👈 this moves the icon upward */
+    padding-right: 20px; /* ✅ adds space from the right edge */
+
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div >
+      <a href="mailto:srinathbulusu28@gmail.com" style="color:white; text-decoration: none;"><img src="https://img.icons8.com/fluency-systems-filled/24/ffffff/new-post.png">srinathbulusu28@gmail.com</a>
+      <span><img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png">+1-8178198120</span>
+      <a href="https://www.linkedin.com/in/srinath-bulusu-665b341a4/" target="_blank" style="color:white;"><img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png">LinkedIn</a>
+      <a href="https://github.com" target="_blank" style="color:white;"><img src="https://img.icons8.com/ios-filled/50/ffffff/github.png">GitHub</a>
+      <a href="resume.pdf" download style="color:white;"><img src="https://img.icons8.com/ios-filled/50/ffffff/export-pdf.png">Download Resume</a>
+    </div>
+  </header>
+  
+
+  <div id="summary" class="section active">
+    <div class="summary-content">
+      <div class="profile-name">
+        <img src="C:\Users\SRINATH\Desktop\vs code\portfolio\photo.jpg" alt="Profile Photo" class="profile-pic" />
+        <div class="name-container" id="nameContainer">SRINATH BULUSU</div>
+      </div>
+      <p class="summary-text">
+        Senior Software Engineer with 3 years of experience at Capgemini Technology Services, specializing in data warehousing and Snowflake backend development with AWS-driven continuous integration to enhance workforce systems and customer experience.Experienced Data Engineer and Snowflake Developer, proficient in building automated data pipelines, conducting data 
+        collection, data cleaning, and implementing data requirements to ensure high data integrity. Successfully implemented CI/CD pipelines for automated data ingestion, leveraging AWS S3 as a source for raw data and integrating it into Snowflake using stored procedures in Snowpark, enhancing strategic initiatives for enterprise data management.Extensive expertise in SQL relational databases (Oracle SQL, Snowflake), executing data modeling, data profiling, and statistical modeling to transform complex datasets into valuable business insights.Well-versed in role-based access control (RBAC), data security, and troubleshooting across multiple projects, ensuring compliance with governance policies. 
+      </p>
+    </div>
+  </div>
+
+  <!-- Slider -->
+
+  <div class="slider-container" id="sliderContainer">
+    <div class="slider-nav">
+      <div class="slider-labels">
+        <span onclick="navigateSection(0)">Summary</span>
+        <span onclick="navigateSection(1)">Skills</span>
+        <span onclick="navigateSection(2)">Experience</span>
+        <span onclick="navigateSection(3)">Education</span>
+        <span onclick="navigateSection(4)">Projects</span>
+        <span onclick="navigateSection(5)">Certificates</span>
+        <span onclick="navigateSection(6)">Awards</span>
+      </div>
+      <input type="range" min="0" max="6" value="0" id="navSlider">
+    </div>
+  </div>
+  
+
+  <!-- Content sections -->
+  <div class="main-content">
+    <div id="skills" class="section">Skills section content...</div>
+    <div id="experience" class="section">Experience section content...</div>
+    <div id="education" class="section">Education section content...</div>
+    <div id="projects" class="section">Projects section content...</div>
+    <div id="certificates" class="section">Certificates section content...</div>
+    <div id="awards" class="section">Awards section content...</div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>&copy; 2025 SRINATH BULUSU. All rights reserved.</div>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook" title="Facebook"/>
+      </a>
+<a href="https://instagram.com" target="_blank">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" title="Instagram" style="margin-left: -6px;" />
+</a>
+
+    </div>
+  </footer>
+
+  <script>
+    const sectionIds = ['summary', 'skills', 'experience', 'education', 'projects', 'certificates', 'awards'];
+    const slider = document.getElementById('navSlider');
+    const nameContainer = document.getElementById('nameContainer');
+  
+    let currentIndex = 0;
+    let isScrolling = false;
+  
+    function navigateSection(index) {
+  const sections = document.querySelectorAll('.section');
+  currentIndex = parseInt(index);
+  slider.value = currentIndex;
+
+  sections.forEach((section, i) => {
+    section.classList.toggle('active', i === currentIndex);
+  });
+
+//   if (currentIndex === 0) {
+//     nameContainer.classList.remove('shrink');
+//     document.getElementById('summary-background').classList.add('active');
+//   } else {
+//     nameContainer.classList.add('shrink');
+//     document.getElementById('summary-background').classList.remove('active');
+//   }
+}
+
+  
+    // 🔁 Only update sections as slider is dragged — DO NOT reset slider.value
+    slider.addEventListener('input', (e) => {
+      navigateSection(e.target.value);
+    });
+  
+    // ✅ Scroll logic: also sync slider when scrolling (because that's not mouse-drag)
+    window.addEventListener('wheel', (e) => {
+      if (isScrolling) return;
+      isScrolling = true;
+  
+      if (e.deltaY > 0 && currentIndex < sectionIds.length - 1) {
+        currentIndex++;
+      } else if (e.deltaY < 0 && currentIndex > 0) {
+        currentIndex--;
+      }
+  
+      slider.value = currentIndex; // ✅ only here, update slider manually
+      navigateSection(currentIndex);
+  
+      setTimeout(() => {
+        isScrolling = false;
+      }, 400);
+    });
+  </script>
+  
+  
+</body>
+</html>
