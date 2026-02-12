@@ -1,13 +1,31 @@
 import React from "react";
  //import {NavLink} from "react-router-dom";
 import styled from "styled-components";
+import { FaBars } from 'react-icons/fa';
 import { 
-  NavContainer, 
-  Navlogo, 
-  MobileIcon, 
-  ButtonContainer, 
-  GithubContainer 
-} from './NavbarStyledComponent'; // OR './NavbarElements'
+    Nav, 
+    NavbarContainer, 
+    NavLogo, 
+    MobileIcon, 
+    NavMenu, 
+    NavItem, 
+    NavLinks,
+    NavBtn,
+    NavBtnLink
+} from './NavbarElements'; 
+
+import { FaBars } from 'react-icons/fa';
+import { 
+    Nav, 
+    NavbarContainer, 
+    NavLogo, 
+    MobileIcon, 
+    NavMenu, 
+    NavItem, 
+    NavLinks,
+    NavBtn,
+    NavBtnLink
+} from './NavbarElements'; // <--- Check if your file is named 'NavbarElements.js' or 'NavbarStyledComponent.js'
 
 const Nav = styled.div`
     background-color: ${({theme}) => theme.card_light};
@@ -23,6 +41,7 @@ const Nav = styled.div`
         trastion: 0.8s all ease;
     }
 `;
+import { Link as LinkR } from 'react-router-dom';
 
 const NavbarContainer = styled.div`
   display: flex;
