@@ -1,6 +1,13 @@
 import React from "react";
  //import {NavLink} from "react-router-dom";
 import styled from "styled-components";
+import { 
+  NavContainer, 
+  Navlogo, 
+  MobileIcon, 
+  ButtonContainer, 
+  GithubContainer 
+} from './NavbarStyledComponent'; // OR './NavbarElements'
 
 const Nav = styled.div`
     background-color: ${({theme}) => theme.card_light};
