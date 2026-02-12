@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import _default from '../../themes/default';
+import _default from '../../themes/default.js';
 
 
 export const SocialMediaIcons = styled.div`

@@ -6,7 +6,7 @@ export const Bio = {
       "Programmer",
     ],
     description:
-      "Experienced Senior Software Engineer with a focus on Python and Snowflake development and data processing. Possessing 3 years of experience at Capgemini Technology Services in creating automated pipelines for continuous integration and continuous deployment. Experience in handling large data and storing them as required by the client. Knowledge on Front end tools such as React JS,HTML,CSS. Interested to explore in various areas and engage in research opportunities.",
+      "Experienced Senior Software Engineer with a focus on Python and Snowflake development and data processing. Possessing5 years of experience at Capgemini Technology Services in creating automated pipelines for continuous integration and continuous deployment. Experience in handling large data and storing them as required by the client. Knowledge on Front end tools such as React JS,HTML,CSS. Interested to explore in various areas and engage in research opportunities.",
     github: "https://github.com/rishavchanda",
     resume:
       "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
